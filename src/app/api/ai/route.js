@@ -11,7 +11,7 @@ export async function GET(req) {
       req.nextUrl.searchParams.get("question") || "What is gravity?";
     const speech = req.nextUrl.searchParams.get("speech") || "formal";
 
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+    const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
     const prompt = `
 You are a friendly, interactive AI teacher who explains concepts clearly and engagingly.
